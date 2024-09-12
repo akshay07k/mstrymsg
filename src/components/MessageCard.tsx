@@ -16,11 +16,7 @@ import { Button } from "./ui/button"
 import { X } from "lucide-react"
 
 type MessageCardProps = {
-    message: {
-        content: string,
-        createdAt: Date, 
-        _id: string
-    },
+    message: Message,
     onMessageDelete: (messageId: string) => void
 }
   
@@ -35,7 +31,7 @@ const MessageCard = ({ message, onMessageDelete } : MessageCardProps) => {
           toast({
             title: response.data.message,
           });
-          onMessageDelete(message._id);
+          onMessageDelete(message._id as string);
     
         } catch (error) {
           const axiosError = error as AxiosError<ApiResponse>;
