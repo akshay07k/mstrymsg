@@ -88,7 +88,7 @@ export default function SendMessage() {
 
   const fetchSuggestedMessages = async () => {
     try {
-      // await complete('');
+      await complete('');
       toast({
         title: 'Suggestions Loaded',
         description: 'Message suggestions have been successfully fetched.',
