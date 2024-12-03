@@ -108,7 +108,7 @@ export default function page() {
                   {!isCheckingUsername && usernameMessage && (
                     <p
                       className={`text-sm ${
-                        usernameMessage === 'Username is unique'
+                        usernameMessage === 'Username is available'
                           ? 'text-green-500'
                           : 'text-red-500'
                       }`}
