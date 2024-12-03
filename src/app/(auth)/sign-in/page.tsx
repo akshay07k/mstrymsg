@@ -12,9 +12,7 @@ import { Form, FormField, FormItem, FormLabel, FormMessage } from '@/components/
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 
-
-
-function page() {
+function Page() {
   const router = useRouter();
   const { toast } = useToast();
 
@@ -101,4 +99,4 @@ function page() {
   )
 }
 
-export default page
+export default Page;
